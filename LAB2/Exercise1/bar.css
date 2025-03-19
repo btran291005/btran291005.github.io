@@ -12,16 +12,16 @@ nav {
     list-style: none;
     background-color: #444;
     text-align: center;
-    padding: 0;
+    padding: 10px 0;
     margin: 0;
 }
 
 nav ul li {
     font-size: 24px;
-    line-height: 40px;
-    height: 40px;
+    line-height: 20px;
+    height: 20px;
     display: inline-block;
-    padding: 10px;
+    padding: 0 15px;
 }
 
 nav ul li a {
@@ -35,11 +35,11 @@ nav ul li:hover {
 }
 
 nav ul li a:hover {
-    color: red;
+    color: rgb(221, 136, 160);
     text-decoration: underline;
 }
 
 article header:hover {
-    color: green;
+    color: rgb(175, 100, 55);
     font-size: large;
 }
