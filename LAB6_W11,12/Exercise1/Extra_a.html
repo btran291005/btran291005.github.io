@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset="UTF-8">
+    <title>Rectangle Calculator</title>
+    <script language="JavaScript">
+        var length = prompt("Enter the length of the rectangle:");
+        var width = prompt("Enter the width of the rectangle:");
+
+        // Check if inputs are valid numbers
+        if (length == null || length == "" || isNaN(length)) {
+            alert("Length is formatted incorrectly.");
+        } else if (width == null || width == "" || isNaN(width)) {
+            alert("Width is formatted incorrectly.");
+        } else {
+            // Convert to numbers
+            var l = parseFloat(length);
+            var w = parseFloat(width);
+
+            // Calculate perimeter and area
+            var perimeter = 2 * (l + w);
+            var area = l * w;
+
+            // Show results
+            alert("Results:\n" +
+                  "Perimeter = 2 * (" + l + " + " + w + ") = " + perimeter + "\n" +
+                  "Area = " + l + " * " + w + " = " + area);
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
